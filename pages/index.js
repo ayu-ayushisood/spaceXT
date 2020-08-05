@@ -1,12 +1,22 @@
-import Fetch from 'isomorphic-unfetch'
+import fetch from 'isomorphic-unfetch'
 import Layout from '../components/Layout'
 import Filter from '../components/Filter'
-import SpaceCard from '../components/SpaceCard'
+import SpaceCards from '../components/SpaceCards'
 
-const Index = () => (
+const Index = (props) => (
     <Layout>
+        <div>SpaceX Launch Programs</div>
         <Filter />
-        <SpaceCard />
+        <SpaceCards data={props.data} />
     </Layout>
-)
-export default Index
+);
+
+Index.getInitialProps = async function() {
+    const res = await fetch('https://api.spacexdata.com/v3/launches?limit=100.json');
+    const data = await res.json();
+
+    return {
+        data: data
+    }
+}
+export default Index;

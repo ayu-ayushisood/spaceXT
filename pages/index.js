@@ -6,8 +6,10 @@ import SpaceCards from '../components/SpaceCards'
 const Index = (props) => (
     <Layout>
         <div>SpaceX Launch Programs</div>
-        <Filter />
-        <SpaceCards data={props.data} />
+        <div className="row">
+            <Filter />
+            <SpaceCards data={props.data} />
+        </div>
     </Layout>
 );
 

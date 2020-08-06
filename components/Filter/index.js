@@ -1,10 +1,8 @@
 import Layout from '../Layout'
 
 const Filter = () => (
-    <Layout>
-        <div>
-            Launch year
-        </div>
-    </Layout>
+    <div className="col-md-3">
+        Launch year
+    </div>
 )
 export default Filter

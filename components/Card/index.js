@@ -1,7 +1,7 @@
 const Card = (props) => (
-        <div className="col-sm-3">
-            <div className="card" style={{width: '18rem'}}>
-                <img src={props.image} className="card-img-top" alt="spaceX" />
+        <div style={{padding: '5px'}}>
+            <div className="card" style={{width: '12rem'}}>
+                <div><img src={props.image} className="card-img-top" alt="spaceX" /></div>
                 <div className="card-body">
                     <h5 className="card-title">{props.name} #{props.id}</h5>
                     <p className="card-text">Mission Ids:</p>

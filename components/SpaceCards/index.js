@@ -1,9 +1,9 @@
-import Layout from '../Layout'
 import Card from '../Card'
+import styles from './SpaceCards.module.css'
 
 const SpaceCards = (props) => (
-        <div className="col-md-9">
-            <div className="row">
+        <div >
+            <div className={styles.spaceCards}>
                 {console.log("data:", props.data)}
                 {
                     props.data.map((element, ind) => {
@@ -21,7 +21,7 @@ const SpaceCards = (props) => (
                         )
                     })
                 }
-            </div>
+            </div>    
        </div>
 )
 export default SpaceCards

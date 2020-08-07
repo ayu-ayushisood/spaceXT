@@ -2,14 +2,16 @@ import fetch from 'isomorphic-unfetch'
 import Layout from '../components/Layout'
 import Filter from '../components/Filter'
 import SpaceCards from '../components/SpaceCards'
+import DevInfo from '../components/DevInfo'
 
 const Index = (props) => (
     <Layout>
-        <div>SpaceX Launch Programs</div>
-        <div className="row">
+        <h2>SpaceX Launch Programs</h2>
+        <div style={{display: 'flex'}}>
             <Filter />
             <SpaceCards data={props.data} />
         </div>
+        <DevInfo />
     </Layout>
 );
 

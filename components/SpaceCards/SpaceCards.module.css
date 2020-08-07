@@ -1,0 +1,4 @@
+.spaceCards{
+    display: flex;
+    flex-flow: wrap;
+}

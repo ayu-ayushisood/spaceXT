@@ -1,0 +1,14 @@
+.filterContainer {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 4rem
+}

@@ -6,7 +6,7 @@ const Card = (props) => (
                 <div><img src={props.image} className="card-img-top" alt="spaceX" style={{backgroundColor: '#ededed'}} /></div>
                 <div className="card-body">
                     <h5 className="card-title">{props.name} #{props.id}</h5>
-                    <p className="card-text">Mission Ids:</p>
+                    <p className={styles.subtitle}>Mission Ids:</p>
                     { props.mission_ids.length > 0 ? props.mission_ids.map((mission_id, ind) => {
                         return(
                             <ul key={ind}>
@@ -15,9 +15,9 @@ const Card = (props) => (
                         )
                     }) : <p>N/A</p>
                     }
-                    <p className="card-text">Launch year: {props.year}</p>
-                    <p className="card-text">Successful Launch: {props.launch_success ? 'True' : 'False'}</p>
-                    <p className="card-text">Successful Landing: {props.landingStatus}</p>
+                    <p><span className={styles.subtitle}>Launch year: </span>{props.year}</p>
+                    <p><span className={styles.subtitle}>Successful Launch: </span> {props.launch_success ? 'True' : 'False'}</p>
+                    <p><span className={styles.subtitle}>Successful Landing: </span>{props.landingStatus}</p>
                 </div>
             </div>
         </div>

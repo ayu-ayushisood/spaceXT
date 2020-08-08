@@ -1,6 +1,22 @@
 import styles from './Filter.module.css'
 
-const Filter = () => (
+const loadLaunched = async function(props) {
+    const res = await fetch('https://api.spacexdata.com/v3/launches?limit=100&launch_success=true');
+    const data = await res.json();
+
+    props.filteredData(data);
+    
+}
+
+const loadLanded = async function(props) {
+    const res = await fetch('https://api.spacexdata.com/v3/launches?limit=100&launch_success=true&land_success=true');
+    const data = await res.json();
+
+    props.filteredData(data);
+    
+}
+
+const Filter = (props) => (
     <div className={styles.filterContainer}>
         <h4>Filters</h4>
         <p>Launch Year</p>
@@ -39,14 +55,15 @@ const Filter = () => (
         </div>
         <h5>Successful Launch</h5>
         <div className={styles.btnContainer}>
-            <button type="button" className={styles.btn} >True</button>
+            <button type="button" className={styles.btn} onClick={ () => loadLaunched(props) }>True</button>
             <button type="button" className={styles.btn} >False</button>
         </div>
         <h5>Successful Landing</h5>
         <div className={styles.btnContainer}>
-            <button type="button" className={styles.btn} >True</button>
+            <button type="button" className={styles.btn} onClick={ () => loadLanded(props) } >True</button>
             <button type="button" className={styles.btn} >False</button>
         </div>
     </div>
 )
+
 export default Filter

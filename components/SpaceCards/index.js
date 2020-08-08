@@ -4,7 +4,6 @@ import styles from './SpaceCards.module.css'
 const SpaceCards = (props) => (
         <div >
             <div className={styles.spaceCards}>
-                {console.log("data:", props.data)}
                 {
                     props.data.map((element, ind) => {
                         return(
@@ -16,7 +15,7 @@ const SpaceCards = (props) => (
                                 mission_ids={element.mission_id}
                                 year={element.launch_year}
                                 launch_success={element.launch_success}
-                                landingStatus={element.launch_landing}
+                                landingStatus={element.rocket.first_stage.cores[0].land_success}
                             />
                         )
                     })

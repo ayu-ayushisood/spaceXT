@@ -17,7 +17,7 @@ const Card = (props) => (
                     }
                     <p><span className={styles.subtitle}>Launch year: </span>{props.year}</p>
                     <p><span className={styles.subtitle}>Successful Launch: </span> {props.launch_success ? 'True' : 'False'}</p>
-                    <p><span className={styles.subtitle}>Successful Landing: </span>{props.landingStatus}</p>
+                    <p><span className={styles.subtitle}>Successful Landing: </span> {props.landingStatus ? 'True' : 'False'}</p>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@ const Card = (props) => (
         <div className={styles.card} >
             <div style={{padding: '1rem'}}>
                 <div><img src={props.image} className="card-img-top" alt="spaceX" style={{backgroundColor: '#ededed'}} /></div>
-                <div className="card-body">
+                <div>
                     <h5 className={styles.cardTitle}>{props.name} #{props.id}</h5>
                     <p className={styles.subtitle}>Mission Ids:</p>
                     { props.mission_ids.length > 0 ? props.mission_ids.map((mission_id, ind) => {

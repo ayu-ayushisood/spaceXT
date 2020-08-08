@@ -27,7 +27,7 @@ class Filter extends React.Component {
     render(){
         return(
         <div className={styles.filterContainer}>
-            <h4>Filters</h4>
+            <h4 style={{color: 'black'}}>Filters</h4>
             <p className={styles.filterHead}>Launch Year</p>
             <div >
                 <div className={styles.btnContainer}>

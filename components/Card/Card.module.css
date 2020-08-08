@@ -1,5 +1,4 @@
 .card {
-    max-width: 16rem;
     background: white;
     margin: 0 0.5rem 1rem;
 }
@@ -16,4 +15,10 @@
 
 .info {
     margin-bottom: 0;
+}
+
+@media only screen and (min-width: 700px){
+    .card {
+        max-width: 16rem;
+    }
 }

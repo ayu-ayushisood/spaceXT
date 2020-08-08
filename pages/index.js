@@ -6,6 +6,8 @@ import Filter from '../components/Filter'
 import SpaceCards from '../components/SpaceCards'
 import DevInfo from '../components/DevInfo'
 
+import styles from './index.module.css'
+
 class Index extends React.Component{
 
     constructor(props){
@@ -35,9 +37,9 @@ class Index extends React.Component{
     render(){
         return(
             <Layout>
-                <h2>SpaceX Launch Programs</h2>
+                <h2 className={styles.heading}>SpaceX Launch Programs</h2>
                 {this.state.data && 
-                    <div style={{display: 'flex'}}>
+                    <div className={styles.mainContainer}>
                         <Filter filteredData = {this.filteredData} />
                     <SpaceCards data={this.state.data} />
                 </div>}

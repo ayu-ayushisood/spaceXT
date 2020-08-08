@@ -1,13 +1,5 @@
-
+import React from 'react'
 import styles from './Filter.module.css'
-
-// const loadLanded = async function(props) {
-//     const res = await fetch('https://api.spacexdata.com/v3/launches?limit=100&launch_success=true&land_success=true');
-//     const data = await res.json();
-
-//     props.filteredData(data);
-    
-// }
 
 class Filter extends React.Component {
     constructor(props){
@@ -36,49 +28,49 @@ class Filter extends React.Component {
         return(
         <div className={styles.filterContainer}>
             <h4>Filters</h4>
-            <p>Launch Year</p>
+            <p className={styles.filterHead}>Launch Year</p>
             <div >
                 <div className={styles.btnContainer}>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2006})} }>2006</button>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2007})} }>2007</button>
+                    <div className={styles.btn} tabIndex="1" onClick={ () => {this.setState({launch_year: 2006})} }>2006</div>
+                    <div className={styles.btn} tabIndex="2" onClick={ () => {this.setState({launch_year: 2007})} }>2007</div>
                 </div>
                 <div className={styles.btnContainer}>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2008})} }>2008</button>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2009})} }>2009</button>
+                    <div className={styles.btn} tabIndex="3" onClick={ () => {this.setState({launch_year: 2008})} }>2008</div>
+                    <div className={styles.btn} tabIndex="4" onClick={ () => {this.setState({launch_year: 2009})} }>2009</div>
                 </div>
                 <div className={styles.btnContainer}>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2010})} }>2010</button>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2011})} }>2011</button>
+                    <div className={styles.btn} tabIndex="5" onClick={ () => {this.setState({launch_year: 2010})} }>2010</div>
+                    <div className={styles.btn} tabIndex="6" onClick={ () => {this.setState({launch_year: 2011})} }>2011</div>
                 </div>
                 <div className={styles.btnContainer}>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2012})} }>2012</button>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2013})} }>2013</button>
+                    <div className={styles.btn} tabIndex="7" onClick={ () => {this.setState({launch_year: 2012})} }>2012</div>
+                    <div className={styles.btn} tabIndex="8" onClick={ () => {this.setState({launch_year: 2013})} }>2013</div>
                 </div>
                 <div className={styles.btnContainer}>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2014})} }>2014</button>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2015})} }>2015</button>
+                    <div className={styles.btn} tabIndex="9" onClick={ () => {this.setState({launch_year: 2014})} }>2014</div>
+                    <div className={styles.btn} tabIndex="10" onClick={ () => {this.setState({launch_year: 2015})} }>2015</div>
                 </div>
                 <div className={styles.btnContainer}>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2016})} }>2016</button>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2017})} }>2017</button>
+                    <div className={styles.btn} tabIndex="11" onClick={ () => {this.setState({launch_year: 2016})} }>2016</div>
+                    <div className={styles.btn} tabIndex="12" onClick={ () => {this.setState({launch_year: 2017})} }>2017</div>
                 </div>
                 <div className={styles.btnContainer}>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2018})} }>2018</button>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2019})} }>2019</button>
+                    <div className={styles.btn} tabIndex="13" onClick={ () => {this.setState({launch_year: 2018})} }>2018</div>
+                    <div className={styles.btn} tabIndex="14" onClick={ () => {this.setState({launch_year: 2019})} }>2019</div>
                 </div>
                 <div className={styles.btnContainer}>
-                    <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_year: 2020})} }>2020</button>
+                    <div className={styles.btn} tabIndex="15" onClick={ () => {this.setState({launch_year: 2020})} }>2020</div>
                 </div>
             </div>
-            <h5>Successful Launch</h5>
+            <p className={styles.filterHead}>Successful Launch</p>
             <div className={styles.btnContainer}>
-                <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_success: true})} }>True</button>
-                <button type="button" className={styles.btn} onClick={ () => {this.setState({launch_success: false})} }>False</button>
+                <div className={styles.btn} tabIndex="16" onClick={ () => {this.setState({launch_success: true})} }>True</div>
+                <div className={styles.btn} tabIndex="17" onClick={ () => {this.setState({launch_success: false})} }>False</div>
             </div>
-            <h5>Successful Landing</h5>
+            <p className={styles.filterHead}>Successful Landing</p>
             <div className={styles.btnContainer}>
-                <button type="button" className={styles.btn} onClick={ () => {this.setState({land_success: true})} } >True</button>
-                <button type="button" className={styles.btn}onClick={ () => {this.setState({land_success: false})} } >False</button>
+                <div className={styles.btn} tabIndex="18" onClick={ () => {this.setState({land_success: true})} } >True</div>
+                <div className={styles.btn} tabIndex="19" onClick={ () => {this.setState({land_success: false})} } >False</div>
             </div>
         </div>
         )

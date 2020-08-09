@@ -8,3 +8,5 @@ Multiple reusable components and global module css files are used to develop thi
 
 ## Lighthouse optimisation
 Initially lighthouse score was 90 for SEO, 75 for Performance, 84 for Accessibility and 100 for best practices. The code is optimised for SEO, Accessibility and Performance. and now the code stands for 91, 96, 90 and 100
+
+Visit https://space-xt.vercel.app/

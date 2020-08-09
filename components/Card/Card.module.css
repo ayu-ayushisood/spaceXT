@@ -6,6 +6,8 @@
 .cardTitle {
     color: #2F5396;
     font-weight: 700;
+    font-size: 18px;
+    margin: 0
 }
 
 .subtitle {
@@ -15,6 +17,11 @@
 
 .info {
     margin-bottom: 0;
+}
+
+.cardImg {
+    background-color: #ededed;
+    width: 100%;
 }
 
 @media only screen and (min-width: 700px){

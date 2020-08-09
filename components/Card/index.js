@@ -3,7 +3,7 @@ import styles from './Card.module.css'
 const Card = (props) => (
         <div className={styles.card} >
             <div style={{padding: '1rem'}}>
-                <div><img src={props.image} className="card-img-top" alt="spaceX" style={{backgroundColor: '#ededed'}} /></div>
+                <div><img src={props.image} className={styles.cardImg} alt="spaceX" /></div>
                 <div>
                     <h5 className={styles.cardTitle}>{props.name} #{props.id}</h5>
                     <p className={styles.subtitle}>Mission Ids:</p>

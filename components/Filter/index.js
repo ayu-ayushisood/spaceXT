@@ -6,8 +6,8 @@ class Filter extends React.Component {
         super(props);
 
         this.state = {
-            launch_success: false,
-            land_success: false,
+            launch_success: true,
+            land_success: true,
             launch_year: 0
         }
 

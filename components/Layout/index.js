@@ -5,7 +5,7 @@ const Layout = (props) => (
             <title>SpaceXT</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <meta property="og:title" content="SpaceXT" key="title" />
-            <meta property="og:desctiption" content="A web application which helps users list and browse all launches by SpaceX program." key="description" />
+            <meta property="og:description" content="A web application which helps users list and browse all launches by SpaceX program." key="description" />
         </Head>
         <div>
             {props.children}

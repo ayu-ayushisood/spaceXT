@@ -1,5 +1,5 @@
 # SpaceXT
-A web application which helps users list and browse all launches by SpaceX program build using mobile first design approach.
+A web application which helps users list and browse all launches by SpaceX program. Built using mobile first design approach.
 
 ## Stack details
 The web app is server side rendered using Next.js.

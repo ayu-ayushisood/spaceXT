@@ -2,7 +2,7 @@
 A web application which helps users list and browse all launches by SpaceX program build using mobile first design approach.
 
 ## Stack details
-The web app is server side rendered and Next.js is used for this purpose.
+The web app is server side rendered using Next.js.
 
 Multiple reusable components and global module css files are used to develop this whole web app.
 
